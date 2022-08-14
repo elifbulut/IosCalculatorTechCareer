@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dRf-Ro-pio">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bZJ-IR-Rbd">
+            <objects>
+                <viewController id="dRf-Ro-pio" customClass="ViewController" customModule="techCareerIosCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sk7-aC-Rhx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02A-wE-vwA">
+                                <rect key="frame" x="0.0" y="319" width="414" height="577"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-q9-3UO">
+                                        <rect key="frame" x="27" y="142" width="360" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPL-Sx-Lpe" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="7">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numbers:" destination="dRf-Ro-pio" eventType="touchUpInside" id="Uzs-rg-mQw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EF1-nC-lS2" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="95" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="8">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numbers:" destination="dRf-Ro-pio" eventType="touchUpInside" id="ZmP-rm-eI5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-XP-gzP" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="190" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="9">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numbers:" destination="dRf-Ro-pio" eventType="touchUpInside" id="Z8Q-41-nGu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAF-Wa-Xgx" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="285" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" red="0.72487437905259167" green="0.82150583134757149" blue="0.41533982788338847" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="X">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationButtons:" destination="dRf-Ro-pio" eventType="touchUpInside" id="II5-re-oIo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gBM-Qx-OlU">
+                                        <rect key="frame" x="27" y="236" width="360" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6i-IN-xta" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="4">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numbers:" destination="dRf-Ro-pio" eventType="touchUpInside" id="LNg-nl-JKt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scv-HW-xYu" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="95" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="5">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numbers:" destination="dRf-Ro-pio" eventType="touchUpInside" id="W8e-ed-bq2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ2-Y9-90w" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="190" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="6">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numbers:" destination="dRf-Ro-pio" eventType="touchUpInside" id="8wi-qm-bQG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51r-vK-S0h" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="285" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.89758715986394555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationButtons:" destination="dRf-Ro-pio" eventType="touchUpInside" id="2JX-AC-Mxe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3jI-d8-thk">
+                                        <rect key="frame" x="27" y="329" width="360" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUT-gd-Lda" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="1">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numbers:" destination="dRf-Ro-pio" eventType="touchUpInside" id="3bu-CK-e3M"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dR-2T-pfU" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="95" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="2">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numbers:" destination="dRf-Ro-pio" eventType="touchUpInside" id="ZNH-B0-EHz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekS-sM-qhh" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="190" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="3">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numbers:" destination="dRf-Ro-pio" eventType="touchUpInside" id="qDg-81-uID"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAU-ra-uiQ" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="285" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationButtons:" destination="dRf-Ro-pio" eventType="touchUpInside" id="p9l-BL-QLV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ukY-DL-yFf">
+                                        <rect key="frame" x="27" y="422" width="360" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPH-FT-axJ" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="0">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numbers:" destination="dRf-Ro-pio" eventType="touchUpInside" id="UuB-aw-Hr8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-eU-Vr4" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="190" y="0.0" width="170" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="=">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationButtons:" destination="dRf-Ro-pio" eventType="touchUpInside" id="CAO-7h-mdW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jzw-Ok-zIy">
+                                        <rect key="frame" x="27" y="49" width="360" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sw-Hl-GTu" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="AC">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationButtons:" destination="dRf-Ro-pio" eventType="touchUpInside" id="qXU-im-2Jo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtO-xY-jWW" customClass="buttonDesign" customModule="techCareerIosCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="190" y="0.0" width="170" height="75"/>
+                                                <color key="backgroundColor" red="1" green="0.80674043683313756" blue="0.16758541431567497" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="/">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="buttons" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operationButtons:" destination="dRf-Ro-pio" eventType="touchUpInside" id="nHg-t6-hhA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <constraints>
+                                    <constraint firstItem="3jI-d8-thk" firstAttribute="top" secondItem="gBM-Qx-OlU" secondAttribute="bottom" constant="18" id="2KF-Fi-e5w"/>
+                                    <constraint firstItem="3jI-d8-thk" firstAttribute="trailing" secondItem="ukY-DL-yFf" secondAttribute="trailing" id="44M-ud-YFb"/>
+                                    <constraint firstItem="Jzw-Ok-zIy" firstAttribute="centerX" secondItem="02A-wE-vwA" secondAttribute="centerX" id="5FG-gu-Sz2"/>
+                                    <constraint firstItem="3jI-d8-thk" firstAttribute="top" secondItem="02A-wE-vwA" secondAttribute="top" constant="329" id="6KD-8q-dYk"/>
+                                    <constraint firstItem="0fb-q9-3UO" firstAttribute="trailing" secondItem="gBM-Qx-OlU" secondAttribute="trailing" id="7GW-bu-D72"/>
+                                    <constraint firstItem="Jzw-Ok-zIy" firstAttribute="trailing" secondItem="0fb-q9-3UO" secondAttribute="trailing" id="Di4-9F-5cl"/>
+                                    <constraint firstItem="ukY-DL-yFf" firstAttribute="top" secondItem="3jI-d8-thk" secondAttribute="bottom" constant="18" id="Jjp-MG-IDF"/>
+                                    <constraint firstItem="gBM-Qx-OlU" firstAttribute="top" secondItem="0fb-q9-3UO" secondAttribute="bottom" constant="19" id="MT9-uB-djF"/>
+                                    <constraint firstItem="gBM-Qx-OlU" firstAttribute="trailing" secondItem="3jI-d8-thk" secondAttribute="trailing" id="Q1R-I4-9W4"/>
+                                    <constraint firstItem="0fb-q9-3UO" firstAttribute="leading" secondItem="gBM-Qx-OlU" secondAttribute="leading" id="Yo7-fj-2fW"/>
+                                    <constraint firstItem="ukY-DL-yFf" firstAttribute="top" secondItem="02A-wE-vwA" secondAttribute="top" constant="422" id="ZYe-xa-fSC"/>
+                                    <constraint firstItem="gBM-Qx-OlU" firstAttribute="top" secondItem="02A-wE-vwA" secondAttribute="top" constant="236" id="a8e-uq-6SK"/>
+                                    <constraint firstItem="0fb-q9-3UO" firstAttribute="top" secondItem="Jzw-Ok-zIy" secondAttribute="bottom" constant="18" id="dIq-Vc-u4T"/>
+                                    <constraint firstItem="0fb-q9-3UO" firstAttribute="top" secondItem="02A-wE-vwA" secondAttribute="top" constant="142" id="ely-3G-SBl"/>
+                                    <constraint firstItem="3jI-d8-thk" firstAttribute="leading" secondItem="ukY-DL-yFf" secondAttribute="leading" id="jmS-Fa-rlb"/>
+                                    <constraint firstAttribute="bottom" secondItem="ukY-DL-yFf" secondAttribute="bottom" constant="80" id="nZV-zo-ZaE"/>
+                                    <constraint firstItem="Jzw-Ok-zIy" firstAttribute="leading" secondItem="0fb-q9-3UO" secondAttribute="leading" id="o4p-8C-gi8"/>
+                                    <constraint firstItem="gBM-Qx-OlU" firstAttribute="leading" secondItem="3jI-d8-thk" secondAttribute="leading" id="rIM-CT-UT1"/>
+                                    <constraint firstItem="Jzw-Ok-zIy" firstAttribute="top" secondItem="02A-wE-vwA" secondAttribute="top" constant="49" id="xIf-6I-Yza"/>
+                                    <constraint firstItem="Jzw-Ok-zIy" firstAttribute="leading" secondItem="02A-wE-vwA" secondAttribute="leading" constant="27" id="zkg-Ic-9Az"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orO-lj-bRD">
+                                <rect key="frame" x="20" y="153" width="374" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="Hms-j9-gLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Noh-BA-TIQ"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="orO-lj-bRD" firstAttribute="leading" secondItem="sk7-aC-Rhx" secondAttribute="leadingMargin" id="3MK-jo-hzL"/>
+                            <constraint firstItem="orO-lj-bRD" firstAttribute="trailing" secondItem="sk7-aC-Rhx" secondAttribute="trailingMargin" id="6zB-8S-TPG"/>
+                            <constraint firstItem="02A-wE-vwA" firstAttribute="top" secondItem="orO-lj-bRD" secondAttribute="bottom" constant="32" id="Ir6-HK-FDw"/>
+                            <constraint firstItem="02A-wE-vwA" firstAttribute="leading" secondItem="Noh-BA-TIQ" secondAttribute="leading" id="jn4-BE-tsp"/>
+                            <constraint firstItem="orO-lj-bRD" firstAttribute="centerX" secondItem="02A-wE-vwA" secondAttribute="centerX" id="lYT-4d-djp"/>
+                            <constraint firstItem="orO-lj-bRD" firstAttribute="top" secondItem="Noh-BA-TIQ" secondAttribute="top" constant="109" id="rpB-5Q-gvv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="02A-wE-vwA" secondAttribute="bottom" constant="-34" id="vIo-xn-MGG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="orO-lj-bRD" id="KmI-fy-AZT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUj-wW-0uF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="-37.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
